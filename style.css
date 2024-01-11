@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: brown;
+}
+
+.calc_container {
+  text-align: center;
+}
+
+.calc_back {
+  width: 500px;
+  height: 600px;
+  background-color: black;
+  margin: 0 auto; 
+}
+
+.grid {
+  display: grid;
+  bottom: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 350px;
+  margin: 20px auto; /* Center the grid */
+}
+
+.clear_delete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -400px;
+}
+
+.clear_delete button {
+  width: 60%; /* Adjust button width as needed */
+}
