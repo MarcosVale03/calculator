@@ -1,38 +1,79 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  background-color: brown;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  .calc_container {
+    width: 500px;
+    height: 600px;
+  }
+  
+  .calc_back {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(148, 18, 18);
+    border-style: ridge;
+    border-radius: 5%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 350px;
+    margin: 20px auto; 
+  }
 
-.calc_container {
-  text-align: center;
-}
+  .grid button {
+    height: 70px;
+    width: 80px;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(77, 77, 77);
+    border-style: ridge;
+    border-radius: 5%;
+  }
+  
+  .clear_delete {
+    text-align: center;
+    margin-top: -440px;
 
-.calc_back {
-  width: 500px;
-  height: 600px;
-  background-color: black;
-  margin: 0 auto; 
-}
+  }
 
-.grid {
-  display: grid;
-  bottom: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  max-width: 350px;
-  margin: 20px auto; /* Center the grid */
-}
+  .clear_delete button {
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(77, 77, 77);
+    border-style: ridge;
+    border-radius: 5%;
+    margin: 10px;
+    margin-bottom: -5px;
+    height: 70px;
+    width: 162px;
+  }
 
-.clear_delete {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -400px;
-}
 
-.clear_delete button {
-  width: 60%; /* Adjust button width as needed */
-}
+  .display  {
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(77, 77, 77);
+    border-radius: 10px;
+    border: 2px solid rgb(77,77,77);
+    position: relative;
+    margin-left: 16%;
+    margin-bottom: -150px;
+    width: 340px;
+    height: 120px;
+    background-color: white;
+  }
+
